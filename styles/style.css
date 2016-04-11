@@ -20,6 +20,7 @@ li{
     background-repeat: no-repeat;
     background-position: 50% 50%;
     position:relative;
+    margin-bottom: 20px;
 }
 li p{
     display:none;
@@ -34,7 +35,7 @@ li p{
 ul {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: space-around;
 }
 .overlay{
     display: none;
