@@ -6,12 +6,12 @@ function imgError(el){
 $(document).ready(function(){
 
     $(document).on('mouseover','li' ,function(e){
-        $(e.currentTarget).find('p').show();
+        $(e.currentTarget).find('p','f','g').show();
         $(e.currentTarget).find('.overlay').show();
 
     });
     $(document).on('mouseleave','li' ,function(e){
-        $(e.currentTarget).find('p').hide();
+        $(e.currentTarget).find('p','f','g').hide();
         $(e.currentTarget).find('.overlay').hide();
     });
 
@@ -23,12 +23,19 @@ $(document).ready(function(){
             var ul = $('#data')
             var array = response.results
             for(var i=0;i<array.length;i++){
+                var date = moment(array[i].dateOfShow).format('DD.MMMM YYYY, h:mm')
+                var TimeElement = $('<p class="loctime time">'+date +'</p>')
+                var Location = $('<p class="loctime location">'+array[i].eventHallName +'</p>')
                 var overlay = $('<div class="overlay" ></div>')
                 var img = $('<img src="'+ array[i].imageSource +'" onerror="imgError(this)"/>')
-                var p = $('<p>'+array[i].name +'</p>')
+                var name = $('<p>'+array[i].name +'</p>')
+
                 var li = $('<li></li>')
 
-                p.appendTo(li)
+                TimeElement.appendTo(li)
+                Location.appendTo(li)
+
+                name.appendTo(li)
                 img.appendTo(li)
                 overlay.appendTo(li)
                 li.appendTo(ul)

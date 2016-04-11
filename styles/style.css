@@ -47,3 +47,19 @@ ul {
     background-color: black;
     opacity: 0.5;
 }
+li .loctime{
+    display: none;
+    z-index: 1000;
+    text-align: center;
+    position: absolute;
+    width:100%;
+    top:200px;
+    color:white;
+    font-family: 'Roboto', sans-serif;
+}
+li .location{
+    padding-top: 150px;
+}
+li .time {
+    padding-top: 180px;
+}
