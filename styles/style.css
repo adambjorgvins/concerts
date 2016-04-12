@@ -15,12 +15,16 @@ img{
 li{
     width: 450px;
     height: 400px;
-
     background-size: cover;
     background-repeat: no-repeat;
     background-position: 50% 50%;
     position:relative;
     margin-bottom: 20px;
+    cursor: pointer;
+
+
+
+
 }
 li p{
     display:none;
