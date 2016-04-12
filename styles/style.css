@@ -35,6 +35,7 @@ li p{
     top:200px;
     color:navajowhite;
     font-family: 'Roboto', sans-serif;
+    font-size: 20px;
 }
 ul {
     display: flex;
