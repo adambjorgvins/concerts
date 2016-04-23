@@ -12,19 +12,21 @@ body{
                                   not supported by any browser */
 }
 img{
-    width:450px;
-    height:400px;
+    width: 363px;
+    height: 330px;
     overflow: hidden;
 }
 li{
-    width: 450px;
-    height: 400px;
+    width: 363px;
+    height: 330px;
     background-size: cover;
     background-repeat: no-repeat;
     background-position: 50% 50%;
     position:relative;
     margin-bottom: 20px;
     cursor: pointer;
+    text-align: center
+;
 }
 li p{
     display:none;
@@ -40,7 +42,7 @@ li p{
 ul {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
+    justify-content: center;
 }
 .overlay{
     display: none;
@@ -53,20 +55,19 @@ ul {
     opacity: 0.5;
 }
 li .loctime{
-    display: none;
     z-index: 1000;
     text-align: center;
     position: absolute;
-    width:100%;
+    width: 100%;
     top:200px;
     color:antiquewhite;
     font-family: 'Roboto', sans-serif;
 }
 li .location{
-    padding-top: 150px;
+    padding-top: 60px;
 }
 li .time {
-    padding-top: 180px;
+    padding-top: 80px;
 }
 .text-center {
     text-align: center;
